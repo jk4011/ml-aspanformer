@@ -2,7 +2,7 @@
 albumentations==0.5.1 --no-binary=imgaug,albumentations
 ray>=1.0.1
 einops==0.3.0
-kornia==0.4.1
+kornia
 loguru==0.5.3
 yacs>=0.1.8
 tqdm
@@ -12,8 +12,8 @@ ipython
 jupyterlab
 matplotlib
 h5py
-pytorch-lightning==1.3.5
+pytorch-lightning
 loguru
 joblib>=1.0.1
-torchmetrics==0.4
-torchvision==0.9.1
+torchmetrics
+torchvision

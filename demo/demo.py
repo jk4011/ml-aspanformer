@@ -16,9 +16,9 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--config_path', type=str, default='../configs/aspan/outdoor/aspan_test.py',
                     help='path for config file.')
-parser.add_argument('--img0_path', type=str, default='../assets/phototourism_sample_images/piazza_san_marco_06795901_3725050516.jpg',
+parser.add_argument('--img0_path', type=str, default='/data/wlsgur4011/IMC/aspanformer/assets/phototourism_sample_images/piazza_san_marco_06795901_3725050516.jpg',
                     help='path for image0.')
-parser.add_argument('--img1_path', type=str, default='../assets/phototourism_sample_images/piazza_san_marco_15148634_5228701572.jpg',
+parser.add_argument('--img1_path', type=str, default='/data/wlsgur4011/IMC/aspanformer/assets/phototourism_sample_images/piazza_san_marco_15148634_5228701572.jpg',
                     help='path for image1.')
 parser.add_argument('--weights_path', type=str, default='/data/wlsgur4011/IMC/imc/script/.aspanformer/weights/outdoor.ckpt',
                     help='path for model weights.')
