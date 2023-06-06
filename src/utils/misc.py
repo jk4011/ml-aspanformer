@@ -2,7 +2,7 @@ import os
 import contextlib
 import joblib
 from typing import Union
-from loguru import _Logger, logger
+# from loguru import _Logger, logger
 from itertools import chain
 
 import torch
@@ -26,10 +26,10 @@ def upper_config(dict_cfg):
 def log_on(condition, message, level):
     if condition:
         assert level in ['INFO', 'DEBUG', 'WARNING', 'ERROR', 'CRITICAL']
-        logger.log(level, message)
+        # logger.log(level, message)
 
 
-def get_rank_zero_only_logger(logger: _Logger):
+def get_rank_zero_only_logger(logger):
     if rank_zero_only.rank == 0:
         return logger
     else:
@@ -58,9 +58,10 @@ def setup_gpus(gpus: Union[str, int]) -> int:
         os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
         os.environ["CUDA_VISIBLE_DEVICES"] = ','.join(str(i) for i in gpu_ids)
         visible_devices = os.getenv('CUDA_VISIBLE_DEVICES')
-        logger.warning(f'[Temporary Fix] manually set CUDA_VISIBLE_DEVICES when specifying gpus to use: {visible_devices}')
+        # logger.warning(f'[Temporary Fix] manually set CUDA_VISIBLE_DEVICES when specifying gpus to use: {visible_devices}')
     else:
-        logger.warning('[Temporary Fix] CUDA_VISIBLE_DEVICES already set by user or the main process.')
+        pass
+        # logger.warning('[Temporary Fix] CUDA_VISIBLE_DEVICES already set by user or the main process.')
     return len(gpu_ids)
 
 
