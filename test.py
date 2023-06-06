@@ -3,7 +3,7 @@ import argparse
 import pprint
 from loguru import logger as loguru_logger
 
-from src.config.default import get_cfg_defaults
+from aspanformer.src.config.default import get_cfg_defaults
 from src.utils.profiler import build_profiler
 
 from src.lightning.data import MultiSceneDataModule

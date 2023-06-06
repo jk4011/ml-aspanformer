@@ -1,4 +1,4 @@
-from src.config.default import _CN as cfg
+from aspanformer.src.config.default import _CN as cfg
 
 cfg.ASPAN.COARSE.COARSEST_LEVEL= [36,36]
 cfg.ASPAN.COARSE.TRAIN_RES = [832,832]

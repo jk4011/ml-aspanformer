@@ -4,7 +4,7 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, ROOT_DIR)
 
 from src.ASpanFormer.aspanformer import ASpanFormer
-from src.config.default import get_cfg_defaults
+from aspanformer.src.config.default import get_cfg_defaults
 from src.utils.misc import lower_config
 import demo_utils
 

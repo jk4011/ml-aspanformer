@@ -1,4 +1,4 @@
-from src.config.default import _CN as cfg
+from aspanformer.src.config.default import _CN as cfg
 
 cfg.ASPAN.MATCH_COARSE.MATCH_TYPE = 'dual_softmax'
 
